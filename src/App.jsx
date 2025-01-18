@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar"; 
 import { Route, Routes } from "react-router-dom";
 import Search from "./components/Search";
@@ -9,6 +9,13 @@ import Loading from "./loader/Loading";
 
 function App() {
   const { loading } = useAuth();
+
+  useEffect(() => {
+    if (!loading) {
+      alert('Welcome to our app!');
+    }
+  }, [loading]);
+
   return ( 
     <div>
       {loading && <Loading /> }
