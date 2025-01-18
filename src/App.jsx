@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     if (!loading) {
-      alert('Welcome to our app!');
+      alert('The response time of API is over.');
     }
   }, [loading]);
 
