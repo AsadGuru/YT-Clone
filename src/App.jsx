@@ -12,7 +12,8 @@ function App() {
 
   useEffect(() => {
     if (!loading) {
-      alert('The response time of API is over.');
+      alert('Mkae sure to open in FireFox!');
+      alert('Sorry!The response time of API is over.');
     }
   }, [loading]);
 
